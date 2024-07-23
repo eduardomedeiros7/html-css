@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+    /* Seletores personalizados
+       # = id
+       . = class
+       : = pseudo-class
+       :: = pseudo-element
+       > = clildren
+       */
+
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(248, 50, 0);
+            text-decoration: none; /*Tirar o sublinhado dos links*/
+            font-weight: bold; /*Negrit*/
+        }
+
+        a:visited{ 
+            color: rgb(165, 42, 104);/*Se for visitado*/
+           
+
+        }
+        a:hover{
+            color: black; /*Passar o mouse por cima 
+            fica sublinado */
+            text-decoration: underline; /* sublinhado*/
+
+        }
+        a:active{
+            color: gold; /* link ativo*/
+        }
+        .especial::before{
+            content:'☇' ;
+        }
+
+        .especial{
+            background-color: blueviolet;
+            color: black;
+        }
+        .especial::after{
+            content:'☇' ;
+            text-decoration: none;
+            font-weight: normal;
+            color: rgba(165, 38, 0, 0.267);
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtub.com/cursoemvideo" class="especial">Canal do YouTub</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do Cursoevídeo</a></li>
+    </ul>
+</body>
+</html>
+<!--target serve para abrir uma nova aba e deixar aatual aberta-->
+<!--piseu-dasclasses:São palavras q definem estados de elementos dentro da HTML -->
+<!--piseu-doelemento:Pode agir nas classes, nos elementos, nos id.
+Eles mechem no conteudo periférco do elemento.-->

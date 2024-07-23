@@ -1,0 +1,80 @@
+@charset "UFT-8";
+body{
+    background-color: black;
+    color: rgba(240, 248, 255, 0.541);
+}
+h1.principal{
+    text-align: center;
+    color: blueviolet;
+    
+}
+#saldo{
+    color: white;
+}
+.importante1{
+    background-color: dimgray;
+    height:50px ;
+    width:60px ;
+    color: white;
+    margin:10px ;
+    padding:20px ;
+    border-radius:50px ;
+}
+    
+    
+    
+    
+
+.importante2{
+    background-color: dimgray;
+    height:50px ;
+    width:60px ;
+    color: white;
+    margin:10px ;
+    padding:20px ;
+    border-radius:50px ;
+}
+.importante3{
+    background-color: dimgray;
+    height:50px ;
+    width:60px ;
+    color: white;
+    margin:10px ;
+    padding:20px ;
+    border-radius:50px ;
+}
+
+.importante4{
+    background-color: dimgray;
+    height:50px ;
+    width:60px ;
+    color: white;
+    margin:10px ;
+    padding:20px ;
+    border-radius:50px ;
+}
+.importante5{
+    background-color: dimgray;
+    height:50px ;
+    width:60px ;
+    color: white;
+    margin:10px ;
+    padding:20px ;
+    border-radius:50px ;
+}
+
+
+mark{
+    color: blueviolet;
+    background-color:unset ;
+
+}
+
+.cartoes{
+    background-color: dimgray;
+    color:white ;
+    margin:20px ;
+    border-radius:50px ;
+    padding:15px ;
+    text-align: left;
+}

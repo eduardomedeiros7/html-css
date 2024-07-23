@@ -1,0 +1,198 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{ /*Raiz da arvore*/
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa856;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+    --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-titulos:"Rubik Moonrocks", sans-serif;
+    padding:10px ;
+
+    --fonte-subtitulos:"Rubik Moonrocks", sans-serif;
+    font-size:normal ;
+    padding:10px ;
+
+    --font-paragrafo:"Arsenal SC", sans-serif;
+}
+
+*{ /*Nenhum bloco ou elemento terá margem em cima ou em baixo*/
+    margin:0px;
+    padding:0px ;
+} /*Configurações genéricas ou globais*/
+
+body{
+    background-color: var(--cor0);
+}
+header{
+    background-image:linear-gradient(to bottom, var(--cor3) , var(--cor5)) ; /*Degrade de cores*/
+    min-height:150px; /*Aumenta o cabeçalho de tamanho*/
+    text-align: center; /*Centralizar texto*/
+    padding-top:40px ; /*Distanciar das laterais e bordas*/
+}
+header > h1{
+    font-family: var(--fonte-destaque);
+    color:white ;
+    font-size:3em ; /*Tamanho da fonte*/
+    text-shadow:2px 2px 0px rgba(0, 0, 0, 0.342) ; /*Sombra*/
+    margin-bottom:20px ;
+    font-weight:normal ; /*Sem negrito. deixando normal*/
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    color:white ;
+    font-size:1.2 ;
+    width:500px ;
+    max-width:500px ;
+    margin:auto ; /*Centralizaar o bloco no meio*/
+    padding-left:10px ; /*Distanciar um pouco da borda*/
+    padding-right:10px ;
+    text-shadow:2px 2px 0px rgba(0, 0, 0, 0.479) ;
+    text-align: center;
+    margin-bottom:20px ; /*cria um espaço entre o parágrafo e o menu*/
+    
+}
+nav{
+    font-family: var(--fonte-padrao);
+    background-color:var(--cor5) ;
+    box-shadow:0px 7px 7px ;/*Sombra para baixo no menu*/
+    font-weight: bold; /*Negrito*/
+    padding:10px ; /*Ficar um pouco mais gordinho*/
+
+
+}
+nav > a{
+    color:var(--cor1);
+    padding:10px ; /*Espaçamento entre as bordas de texto do menu*/
+    text-decoration: none; /*Perder o sublinhado*/
+    transition-duration:5s ; /*Quando passaar o mouse, levará um segundo até a tra nsição*/ 
+    
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    color:var(--cor5) ; /*Passando o mouse por cima tbm muda a cor*/
+    border-radius:5px ; /*Deixa a borda meio arredondada*/
+}
+
+
+main{
+    background-color:white;
+    min-width:300px; /*propriedade responsiova*/ /*Tamanho minímo que vai ocupar de uma tela*/
+    max-width:1000px ;/*propriedade responsiva*/ /*Tamanho maximo que vgai ocupar de uma tela*/
+    margin: auto;
+    padding:20px; /*Espaçamento do texto para borda da lateral*/
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.356) ;
+    margin-bottom:30px;
+    border-bottom-left-radius: 10px;/*borda na esquerda em baixo*/
+    border-bottom-right-radius:10px; /*borada na direita em baixo*/
+    
+}
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-titulos);
+    font-weight:normal ;/*sem negrito, deixa mais suave*/
+    font-size:1.8em ;/*Aumenta o tamanho da letra*/
+}
+main h2{
+    font-family: var(--fonte-subtitulos);
+    color: var(--cor4);
+    background-image:linear-gradient(to right, var(--cor1), var(--cor4));
+   text-indent: 8px;/*Distanciamento da borda*/
+   font-weight:normal ;/*Sem negrito, deixa mais suave*/
+}
+main a{
+    background-color: var(--cor1);
+    padding: 2px 6px; /*Da uma engoradinha*/
+    border-radius:10px;
+    text-decoration: none; /*Sem sublinhado*/
+    font-weight:bold; /*Negrito*/
+    color: var(--cor5);
+    
+}
+main a:hover{
+   text-decoration: underline; /*Adiciona um sublinhado*/
+   color: var(--cor4);
+}
+main p{
+   font-family: var(--font-padrao);
+   text-indent:30px ;
+   line-height:1em ;
+   font-size: 1.1em;
+
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+
+main img.pequeno{
+    max-width:350px ;
+    display: block;
+    margin:auto ; /*para uma imagem ficar ao centro*/
+    
+}
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px; /*colar fora, deixar sem espaço livre* -20 pra colar na esquerda*/
+    padding: 20px;/*aumenta o tamanho do bloco onde está o vídeo*/
+    padding-bottom:59% ; /*ajuda a diminuir a barra preta do v;ideo*/
+    position: relative;
+
+}
+div.video > iframe{
+    position: absolute;
+    top:2% ; /*distancia do video perto da borda final*/
+    left:2% ; /*parte esquerda da dica de cima*/
+    width:96% ;
+    height:95% ;
+
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:3px 3px 8px rgba(0, 0, 0, 0.445) ;/*Sombra por volta*/
+}
+aside > ul{
+   list-style-type: '\2705';
+    list-style: inside;/*Deixa a bolinha para o lado de dentro*/
+    columns: 2;/*Divide a lista em duas colunas*/
+
+}
+aside > h3{
+    font-family: var(--fonte-titulos);
+    font-weight:normal ;
+    font-size:1.0em ;
+    background-color: var(--cor4);
+    color:white ;
+    padding:10px ;
+    margin: -10px -10px 0px -10px; /*Crescer pra fora*/ /*margin negativa*/
+    border-radius:10px 10px 0px 0px ;/*Arredondando por fora junto a margin*/
+    
+
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size:0.8em ;
+    padding:5px; /*Para ter um espacinho*/
+}
+footer  a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline; /*Passar o mouse em cima ganha o sublinhado*/
+    color: var(--cor1);/*Muda de cor ao passar por cima*/
+}
+
+
