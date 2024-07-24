@@ -46,17 +46,16 @@ header > h1{
 }
 header > p{
     font-family: var(--fonte-padrao);
-    color:white ;
-    font-size:1.2 ;
-    width:500px ;
-    max-width:500px ;
-    margin:auto ; /*Centralizaar o bloco no meio*/
-    padding-left:10px ; /*Distanciar um pouco da borda*/
-    padding-right:10px ;
-    text-shadow:2px 2px 0px rgba(0, 0, 0, 0.479) ;
-    text-align: center;
-    margin-bottom:20px ; /*cria um espaço entre o parágrafo e o menu*/
-    
+   font-size:1.2em ;
+   color: white;
+   max-width:600px ;
+   padding-right:10px ;
+   padding-left:10px ;
+   margin: auto;
+   padding-bottom:50px ;
+   text-shadow:2px 2px 0px rgba(0, 0, 0, 0.315) ;
+   
+
 }
 nav{
     font-family: var(--fonte-padrao);
